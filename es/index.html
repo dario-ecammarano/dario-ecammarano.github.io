@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dario Cammarano — Senior Java Backend Developer. Microservicios, Spring Boot, APIs REST y arquitecturas cloud."
+    />
+    <title>Dario Cammarano — Senior Java Backend Developer</title>
+    <link rel="canonical" href="./" />
+    <link rel="alternate" hreflang="en" href="../" />
+    <link rel="alternate" hreflang="es" href="./" />
+    <link rel="alternate" hreflang="x-default" href="../" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="header">
+      <a class="logo" href="#">Dario Cammarano</a>
+      <div class="header-tools">
+        <nav class="lang-switch" aria-label="Idioma">
+          <a href="../" class="lang-btn" lang="en">
+            <img class="lang-flag" src="../assets/flags/us.svg" alt="" width="14" height="8" decoding="async" />
+            EN
+          </a>
+          <a href="./" class="lang-btn is-active" aria-current="page" lang="es">
+            <img class="lang-flag" src="../assets/flags/es.svg" alt="" width="14" height="9" decoding="async" />
+            ES
+          </a>
+        </nav>
+        <nav class="nav">
+          <a href="#experiencia">Experiencia</a>
+          <a href="#destacados">Destacados</a>
+          <a href="#skills">Skills</a>
+          <a href="#contacto">Contacto</a>
+          <a class="nav-cta" href="../assets/cv_es.pdf" download>Descargar CV</a>
+        </nav>
+      </div>
+      <button type="button" class="nav-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Senior Java Backend Developer</p>
+            <h1>
+              <span class="name-line">Dario</span>
+              <span class="name-line accent">Cammarano</span>
+            </h1>
+            <p class="hero-lead">
+              Diseño e implemento backends escalables con
+              <strong>Spring Boot</strong>, <strong>microservicios</strong> y
+              <strong>arquitecturas cloud</strong>. Apasionado por el código limpio, la calidad del
+              software y la colaboración en equipos ágiles.
+            </p>
+            <p class="hero-meta">
+              Madrid, España · APIs REST · Sistemas distribuidos · Event-driven
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#experiencia">Ver experiencia</a>
+              <a class="btn btn-ghost" href="../assets/cv_es.pdf" download>Descargar CV</a>
+            </div>
+            <p class="hero-contact-inline">
+              <a
+                href="https://www.linkedin.com/in/dario-cammarano-72912721/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+              · <a href="mailto:cammarano.dario@gmail.com">cammarano.dario@gmail.com</a>
+            </p>
+          </div>
+
+          <aside class="terminal" aria-label="Snapshot de arquitectura backend">
+            <div class="terminal-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">architecture-snapshot</span>
+            </div>
+            <div class="terminal-body architecture-card">
+              <p class="architecture-title">Flujo en produccion</p>
+              <ul class="architecture-flow">
+                <li>Apps cliente</li>
+                <li>Capa de negocio</li>
+                <li>Servicios Spring Boot</li>
+                <li>Microservicios &amp; API Rest</li>
+                <li>Eventos e integraciones</li>
+              </ul>
+              <p class="architecture-note">
+                Arquitectura limpia, confiabilidad y ownership end-to-end desde analisis hasta despliegue.
+              </p>
+              <ul class="architecture-tags">
+                <li>Java 17/21</li>
+                <li>Microservices</li>
+                <li>Clean Code</li>
+                <li>Integration</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+
+      </section>
+      
+      
+      <section class="section section-alt" id="stats" style="background-color: #000000;">
+        <div>
+          <ul class="stats">
+            <li>
+              <strong>15+</strong><span>años en tecnología</span>
+            </li>
+            <li>
+              <strong>8+</strong><span>años Java / backend</span>
+            </li>
+            <li>
+              <strong>Entrega end-to-end</strong><span>análisis, estimación, desarrollo, despliegue</span>
+            </li>
+            <li>
+              <strong>Ingeniería orientada a la calidad</strong><span>código limpio, pruebas, CI/CD, observabilidad</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="experiencia">
+        <p class="section-label">Trayectoria</p>
+        <h2 class="section-title">Experiencia laboral</h2>
+
+        <div class="timeline">
+          <article class="job">
+            <header class="job-head">
+              <div>
+                <h6 class="job-company-location">Retail - <b>Madrid, España</b></h6>
+                <h3>Senior Java Backend Developer</h3>
+                <p class="job-company">Plexus Tech · cliente Inditex</p>
+              </div>
+              <div class="job-meta">
+                <span class="badge badge-current">Actual</span>
+                <time datetime="2024-06">Jun 2024 — Presente</time>
+              </div>
+            </header>
+            <p class="job-desc">
+              Trabajo en microservicios y APIs REST <em>API-first</em> para plataformas retail de
+              Inditex con <strong>Java&nbsp;17–21</strong> y <strong>Spring Boot</strong>, empaquetados
+              y desplegados con <strong>Docker</strong> y <strong>Kubernetes</strong>. Día a día uso
+              <strong>Redis</strong> y <strong>MongoDB</strong> para caché, persistencia y modelos de
+              dominio, y priorizo integraciones limpias y <strong>consistencia</strong> de datos entre
+              sistemas. Trabajamos en <strong>Scrum</strong>/<strong>Kanban</strong> con
+              <strong>Jira</strong> y <strong>Confluence</strong>, con foco en código limpio y calidad
+              de entrega.
+            </p>
+            <ul class="tags">
+              <li>Java 17/21</li>
+              <li>Spring Boot</li>
+              <li>Kubernetes</li>
+              <li>Redis</li>
+              <li>MongoDB</li>
+              <li>API-First</li>
+            </ul>
+            <details class="job-disclosure" open>
+              <summary>Responsabilidades y detalle</summary>
+              <div class="job-disclosure-body">
+                <ul class="job-bullets">
+                  <li>
+                    Implementación de microservicios y APIs REST con <strong>Java 17 y 21</strong> y
+                    <strong>Spring Boot</strong>, desplegados con <strong>Docker</strong> y
+                    <strong>Kubernetes</strong>.
+                  </li>
+                  <li>
+                    Uso de <strong>Redis</strong> y <strong>MongoDB</strong> según necesidades de
+                    caché, persistencia y modelos de datos del dominio.
+                  </li>
+                  <li>
+                    Obtención, procesamiento y transformación de datos vía REST, priorizando
+                    integración correcta entre sistemas y <strong>consistencia</strong> de la
+                    información.
+                  </li>
+                  <li>
+                    Metodologías ágiles (<strong>Scrum</strong> y <strong>Kanban</strong>), tareas y
+                    documentación en <strong>Jira</strong> y <strong>Confluence</strong>.
+                  </li>
+                  <li>
+                    Buenas prácticas, <strong>código limpio</strong> y calidad del software
+                    entregado.
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </article>
+
+          <article class="job">
+            <header class="job-head">
+              <div>
+                <h6 class="job-company-location">Consultoria - <b>Buenos Aires, Argentina</b></h6>
+                <h3>Senior Java Backend Developer</h3>
+                <p class="job-company">Sinapsis</p>
+              </div>
+              <div class="job-meta">
+                <time datetime="2023-02">Feb 2023 — Jun 2024</time>
+              </div>
+            </header>
+            <p class="job-desc">
+              Rol de consultoría con <strong>ownership end-to-end</strong>: desglosar problemas con el
+              cliente, estimar esfuerzo, implementar funcionalidades y llevarlas a producción. Construí
+              y evolucioné <strong>microservicios</strong> en <strong>Java&nbsp;11/14</strong>,
+              <strong>Spring Boot</strong> y <strong>Spring Data JPA</strong>, con
+              <strong>REST</strong> y <strong>Node.js</strong> puntual donde encajaba. El stack incluyó
+              <strong>AWS</strong> (SQS, SNS, ECS, EC2), <strong>CloudWatch</strong>,
+              <strong>PostgreSQL</strong>, <strong>Redis</strong> y <strong>OpenSearch</strong>;
+              también participé en despliegues, <strong>migraciones de base de datos</strong> e
+              incidencias en producción, con pipelines en <strong>Jenkins</strong> y
+              <strong>GitHub Actions</strong> y seguimiento de errores con <strong>Bugsnag</strong>.
+            </p>
+            <ul class="tags">
+              <li>Spring Data JPA</li>
+              <li>AWS</li>
+              <li>PostgreSQL</li>
+              <li>CI/CD</li>
+            </ul>
+            <details class="job-disclosure" open>
+              <summary>Responsabilidades y detalle</summary>
+              <div class="job-disclosure-body">
+                <ul class="job-bullets">
+                  <li>
+                    Identificación de soluciones, <strong>estimación</strong>, desarrollo y
+                    <strong>pruebas unitarias y E2E</strong> para calidad y estabilidad.
+                  </li>
+                  <li>
+                    Stack: <strong>Java 11/14</strong>, <strong>Spring Boot</strong>,
+                    <strong>Spring Data JPA</strong>, <strong>microservicios</strong>, REST y
+                    <strong>Node.js</strong> según el caso.
+                  </li>
+                  <li>
+                    <strong>AWS</strong>: <strong>SQS</strong>, <strong>SNS</strong>,
+                    <strong>ECS</strong>, <strong>EC2</strong> y observabilidad con
+                    <strong>CloudWatch</strong>.
+                  </li>
+                  <li>
+                    <strong>Despliegues</strong>, infraestructura,
+                    <strong>migraciones de BD</strong> e incidencias multi-entorno.
+                  </li>
+                  <li>
+                    <strong>CI/CD</strong> con <strong>Jenkins</strong> y
+                    <strong>GitHub Actions</strong>.
+                  </li>
+                  <li>
+                    <strong>PostgreSQL</strong>, <strong>Redis</strong>, <strong>OpenSearch</strong>;
+                    errores con <strong>Bugsnag</strong>.
+                  </li>
+                  <li>
+                    Planificación técnica, priorización y <strong>documentación</strong> para
+                    evolución del sistema.
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </article>
+
+          <article class="job">
+            <header class="job-head">
+              <div>
+                <h6 class="job-company-location">Fintech - <b>Buenos Aires, Argentina</b></h6>
+                <h3>Java FullStack Developer</h3>
+                <p class="job-company">Nubi</p>
+              </div>
+              <div class="job-meta">
+                <time datetime="2020-11">Nov 2020 — Ene 2023</time>
+              </div>
+            </header>
+            <p class="job-desc">
+              En contexto <strong>fintech</strong> desarrollé y mantuve backends basados en Spring y
+              <strong>microservicios</strong>, exponiendo APIs <strong>REST</strong> y flujos
+              asíncronos con <strong>RabbitMQ</strong>, con datos en <strong>MongoDB</strong>,
+              <strong>MySQL</strong> y <strong>Redis</strong>. Los despliegues pasaban por
+              <strong>Jenkins</strong>, <strong>Docker</strong> y <strong>Kubernetes</strong> en
+              <strong>AWS</strong>, con código en Git/Bitbucket. También contribuí al front corporativo
+              con <strong>Angular</strong> y piezas en <strong>Node.js</strong> cuando hacía falta, y
+              usé <strong>Datadog</strong> junto con Jira/Confluence para mantener visibles la
+              fiabilidad y la colaboración en el equipo.
+            </p>
+            <ul class="tags">
+              <li>RabbitMQ</li>
+              <li>MongoDB</li>
+              <li>Angular</li>
+              <li>Datadog</li>
+            </ul>
+            <details class="job-disclosure" open>
+              <summary>Responsabilidades y detalle</summary>
+              <div class="job-disclosure-body">
+                <ul class="job-bullets">
+                  <li>
+                    <strong>Desarrollo, mantenimiento y optimización</strong> de backends: rendimiento,
+                    escalabilidad y disponibilidad.
+                  </li>
+                  <li>
+                    <strong>Java 8/11</strong>, <strong>Spring Boot</strong>, JPA,
+                    <strong>microservicios</strong>, REST, <strong>RabbitMQ</strong>.
+                  </li>
+                  <li>
+                    <strong>AWS</strong>, <strong>Jenkins</strong>, <strong>Docker</strong>,
+                    <strong>Kubernetes</strong>; <strong>Git</strong> y <strong>Bitbucket</strong>.
+                  </li>
+                  <li>
+                    <strong>MongoDB</strong>, <strong>MySQL</strong>, <strong>Redis</strong>;
+                    <strong>Angular</strong>, <strong>Node.js</strong> y HTML según producto.
+                  </li>
+                  <li>
+                    <strong>Datadog</strong>; seguimiento con <strong>Jira</strong> y
+                    <strong>Confluence</strong>.
+                  </li>
+                  <li>
+                    <strong>Código limpio</strong> y <strong>automatización</strong> en el flujo de
+                    trabajo.
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </article>
+
+          <article class="job">
+            <header class="job-head">
+              <div>
+                <h6 class="job-company-location">Forwarding - <b>Buenos Aires, Argentina</b></h6>
+                <h3>Java FullStack Developer</h3>
+                <p class="job-company">Kuehne + Nagel</p>
+              </div>
+              <div class="job-meta">
+                <time datetime="2018-09">Sep 2018 — Oct 2020</time>
+              </div>
+            </header>
+            <p class="job-desc">
+              Acompañé <strong>dos aplicaciones logísticas</strong> en Sudamérica: desarrollo de
+              funcionalidades, <strong>integración de APIs</strong> con el ecosistema amplio y soporte
+              técnico y de <strong>producción</strong> junto a negocio y usuarios finales. El trabajo
+              implicó traducir requerimientos en entregas, priorizar con el equipo de negocio y
+              resolver incidencias en ambientes en vivo. El stack se centró en
+              <strong>Java&nbsp;8</strong>, <strong>Spring Boot</strong> y JPA, complementado con
+              <strong>PHP</strong>, <strong>JSF</strong> y <strong>jQuery</strong> donde las
+              superficies legacy lo requerían; <strong>Jenkins</strong> y <strong>Git</strong> para
+              releases y versionado.
+            </p>
+            <ul class="tags">
+              <li>Logística</li>
+              <li>Integraciones</li>
+              <li>Spring Boot</li>
+            </ul>
+            <details class="job-disclosure" open>
+              <summary>Responsabilidades y detalle</summary>
+              <div class="job-disclosure-body">
+                <ul class="job-bullets">
+                  <li>
+                    Desarrollo y <strong>soporte técnico</strong>; integración de APIs con el
+                    ecosistema existente.
+                  </li>
+                  <li>
+                    Trabajo con el <strong>equipo de negocio</strong>: requerimientos, priorización y
+                    entrega rápida y analizada.
+                  </li>
+                  <li>
+                    <strong>Soporte a producción</strong>: incidencias, resolución y acompañamiento a
+                    usuarios.
+                  </li>
+                  <li>
+                    <strong>Java 8</strong>, <strong>Spring Boot</strong>, JPA,
+                    <strong>MongoDB</strong>, <strong>MySQL</strong>, <strong>PHP</strong>,
+                    <strong>JSF</strong>, <strong>jQuery</strong>, JS, JSON, XML, CSS, HTML.
+                  </li>
+                  <li>
+                    <strong>Jenkins</strong> y <strong>Git</strong> en despliegues y versionado.
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </article>
+
+          <article class="job">
+            <header class="job-head">
+              <div>
+                <h6 class="job-company-location">Consultoria - <b>Buenos Aires, Argentina</b></h6>
+                <h3>PHP FullStack Developer</h3>
+                <p class="job-company">Dogma Solutions · cliente Kuehne + Nagel</p>
+              </div>
+              <div class="job-meta">
+                <time datetime="2017-08">Ago 2017 — Jul 2018</time>
+              </div>
+            </header>
+            <p class="job-desc">
+              <strong>Forwarding · LATAM.</strong> Desarrollo <strong>PHP</strong> full-stack para
+              Kuehne&nbsp;+&nbsp;Nagel sobre <strong>Linux</strong> con <strong>MySQL</strong>, más
+              trabajo de front en CSS, HTML y jQuery. Gran parte del rol fue construir y mantener
+              <strong>integraciones</strong>—<strong>APIs externas</strong> y comunicación por
+              <strong>sockets</strong>—con entregas trazables en <strong>Jira</strong>.
+            </p>
+            <ul class="tags">
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>APIs</li>
+            </ul>
+            <details class="job-disclosure" open>
+              <summary>Responsabilidades y detalle</summary>
+              <div class="job-disclosure-body">
+                <ul class="job-bullets">
+                  <li>
+                    Funcionalidades en <strong>PHP 4/5</strong>, <strong>MySQL</strong>,
+                    <strong>Linux</strong>.
+                  </li>
+                  <li>
+                    <strong>APIs externas</strong> y <strong>sockets</strong>.
+                  </li>
+                  <li>
+                    <strong>Jira</strong>; maquetación con CSS, HTML y jQuery.
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </article>
+
+          <article class="job">
+            <header class="job-head">
+              <div>
+                <h6 class="job-company-location">Agencia Digital - <b>Buenos Aires, Argentina</b></h6>
+                <h3>Frontend Developer</h3>
+                <p class="job-company">Marketing Web360</p>
+              </div>
+              <div class="job-meta">
+                <time datetime="2014-02">Feb 2014 — Jul 2017</time>
+              </div>
+            </header>
+            <p class="job-desc">
+              Producción de marketing digital: sitios <strong>responsive</strong>,
+              <strong>newsletters</strong> y <strong>landing pages</strong> para campañas, más
+              iteraciones de promos y landings según evolucionaban los briefs. Trabajé con diseñadores
+              en handoff y ajustes, y produje piezas de campaña como <strong>banners</strong> y
+              gráfica de apoyo. El día a día: HTML, CSS, <strong>Bootstrap</strong>, JavaScript,
+              <strong>PHP</strong> y suite <strong>Adobe</strong> para maquetación y assets.
+            </p>
+            <ul class="tags">
+              <li>Responsive</li>
+              <li>Bootstrap</li>
+              <li>Adobe Suite</li>
+            </ul>
+            <details class="job-disclosure" open>
+              <summary>Responsabilidades y detalle</summary>
+              <div class="job-disclosure-body">
+                <ul class="job-bullets">
+                  <li>
+                    Sitios <strong>responsive</strong>, <strong>newsletters</strong>,
+                    <strong>landings</strong> y promos.
+                  </li>
+                  <li>
+                    Colaboración con <strong>diseño</strong>; <strong>banners</strong> e imágenes para
+                    campañas.
+                  </li>
+                  <li>
+                    Stack: HTML, CSS, Bootstrap, JavaScript, PHP, Adobe Suite.
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </article>
+
+          <article class="job">
+            <header class="job-head">
+              <div>
+                <h6 class="job-company-location">Agencia Digital - <b>Buenos Aires, Argentina</b></h6>
+                <h3>PHP FullStack Developer</h3>
+                <p class="job-company">Chango Publicidad</p>
+              </div>
+              <div class="job-meta">
+                <time datetime="2010-12">Dic 2010 — Ene 2014</time>
+              </div>
+            </header>
+            <p class="job-desc">
+              Primer rol <strong>full-stack</strong> en agencia: sitios y funcionalidades con
+              <strong>PHP&nbsp;5</strong>, <strong>MySQL</strong>, HTML, CSS y
+              <strong>jQuery</strong>. Me dio ownership de punta a punta—desde modelar y consultar
+              datos hasta cablear plantillas y comportamiento en el navegador—y sentó las bases de cómo
+              sigo pensando la estructura clara y el código mantenible.
+            </p>
+            <ul class="tags">
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>jQuery</li>
+            </ul>
+            <details class="job-disclosure" open>
+              <summary>Responsabilidades y detalle</summary>
+              <div class="job-disclosure-body">
+                <ul class="job-bullets">
+                  <li>
+                    Sitios y features con <strong>PHP 5</strong>, <strong>MySQL</strong>, CSS, HTML y
+                    <strong>jQuery</strong>.
+                  </li>
+                  <li>
+                    Visión end-to-end: de la capa de datos al front.
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="destacados">
+        <p class="section-label">Lo que hago</p>
+        <h2 class="section-title">Trabajo destacado</h2>
+        <div class="cards">
+          <article class="card">
+            <span class="card-kicker">Retail tech</span>
+            <h3>Microservicios e Inditex</h3>
+            <p>
+              Servicios escalables con Java moderno, contenedores y orquestación, alineados a un
+              modelo API-First para integrar datos de forma segura y predecible.
+            </p>
+            <ul class="tags">
+              <li>Inditex</li>
+              <li>Java 21</li>
+              <li>Kubernetes</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="card-kicker">Cloud e integración</span>
+            <h3>Plataformas con AWS</h3>
+            <p>
+              Mensajería y despliegue con SQS, SNS, ECS y EC2; pipelines automatizados y
+              observabilidad para entornos de producción estables.
+            </p>
+            <ul class="tags">
+              <li>AWS</li>
+              <li>CI/CD</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="card-kicker">Fintech</span>
+            <h3>Sistemas financieros en Nubi</h3>
+            <p>
+              Backends robustos en sector financiero: rendimiento, automatización y prácticas
+              ágiles con herramientas colaborativas estándar de la industria.
+            </p>
+            <ul class="tags">
+              <li>Spring</li>
+              <li>RabbitMQ</li>
+              <li>MongoDB</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <p class="section-label">Expertise</p>
+        <h2 class="section-title">Skills &amp; stack</h2>
+        <div class="skill-grid">
+          <div class="skill-block">
+            <h3>Backend &amp; Java</h3>
+            <ul class="skill-list">
+              <li>Java 8 —> 21</li>
+              <li>Spring Boot</li>
+              <li>Spring Security</li>
+              <li>Spring Data JPA / Hibernate</li>
+              <li>Microservicios</li>
+              <li>REST APIs</li>
+              <li>Maven</li>
+              <li>Node.js (Express)</li>
+            </ul>
+          </div>
+          <div class="skill-block">
+            <h3>Cloud &amp; DevOps</h3>
+            <ul class="skill-list">
+              <li>AWS (SQS, SNS, ECS, EC2)</li>
+              <li>Docker</li>
+              <li>Kubernetes</li>
+              <li>Jenkins</li>
+              <li>GitHub Actions</li>
+              <li>CloudWatch</li>
+            </ul>
+          </div>
+          <div class="skill-block">
+            <h3>Datos &amp; mensajería</h3>
+            <ul class="skill-list">
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>Redis</li>
+              <li>RabbitMQ</li>
+            </ul>
+          </div>
+          <div class="skill-block">
+            <h3>Frontend &amp; herramientas</h3>
+            <ul class="skill-list">
+              <li>Angular · React</li>
+              <li>HTML5, CSS3, Bootstrap</li>
+              <li>Git · GitHub · Bitbucket</li>
+              <li>Jira · Confluence</li>
+              <li>Postman</li>
+              <li>Datadog</li>
+            </ul>
+          </div>
+          <div class="skill-block">
+            <h3>Metodologías &amp; idiomas</h3>
+            <ul class="skill-list">
+              <li>Agile · Scrum · Kanban</li>
+              <li>Clean code · code review</li>
+            </ul>
+          </div>
+          
+          <div class="skill-block">
+            <h3>Languages</h3>
+            <ul class="skill-list">
+              <li class="language-item">
+                <span class="language-level">
+                  <img class="lang-flag" src="../assets/flags/es.svg" alt="" width="14" height="8" decoding="async" />
+                  &nbsp;
+                  <strong>Spanish  -&nbsp;</strong>Nativo</span>
+              </li>
+              <li class="language-item">
+                <span class="language-level">
+                  <img class="lang-flag" src="../assets/flags/us.svg" alt="" width="14" height="8" decoding="async" />
+                  &nbsp;
+                  <strong>English  -&nbsp;</strong>Fluido</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="educacion">
+        <p class="section-label">Formación</p>
+        <h2 class="section-title">Educación</h2>
+        <ul class="edu-list">
+          <li>
+            <strong>Programador Web Avanzado — Full Stack - Curso </strong>
+            <span>UTN BA · Marzo - Agosto 2020 · React, Angular, Node.js, MongoDB</span>
+          </li>
+          <li>
+            <strong>Licenciatura en Diseño Gráfico</strong>
+            <span>FADU UBA · 2010 — 2019</span>
+          </li>
+          <li>
+            <strong>Técnico en Computación</strong>
+            <span
+              >ET N°26 &ldquo;Confederación Suiza&rdquo;, Buenos Aires (Argentina) · Mar 2004 — Dic
+              2009</span
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="section contact" id="contacto">
+        <p class="section-label">Contacto</p>
+        <h2 class="section-title">¿Hablamos?</h2>
+        <p class="contact-lead">
+          Abierto a proyectos y roles donde el backend, la claridad técnica y el trabajo en equipo
+          marquen la diferencia.
+        </p>
+        <ul class="contact-links">
+          <li>
+            <a href="mailto:cammarano.dario@gmail.com">cammarano.dario@gmail.com</a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/dario-cammarano-72912721/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Dario Cammarano</p>
+      <p class="footer-note">
+        Portfolio personal desarrollado con IA — diseño inspirado en sitios developer-first.
+      </p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
