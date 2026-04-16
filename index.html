@@ -8,6 +8,7 @@
       content="Dario Cammarano — Senior Java Backend Developer. Microservices, Spring Boot, REST APIs, and cloud architectures."
     />
     <title>Dario Cammarano — Senior Backend Developer</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" sizes="any" />
     <link rel="canonical" href="./" />
     <link rel="alternate" hreflang="en" href="./" />
     <link rel="alternate" hreflang="es" href="es/" />
@@ -18,12 +19,18 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
     <header class="header">
-      <a class="logo" href="#">Dario Cammarano</a>
+      <a class="logo" href="#"> <i class="fa-brands fa-java fa-logo"></i> Dario Cammarano</a>
       <div class="header-tools">
         <nav class="lang-switch" aria-label="Language">
           <a href="./" class="lang-btn is-active" aria-current="page" lang="en">
@@ -36,11 +43,10 @@
           </a>
         </nav>
         <nav class="nav">
-          <a href="#experiencia">Experience</a>
-          <a href="#destacados">Highlights</a>
-          <a href="#skills">Skills</a>
+          <a href="#">Who I am</a>
+          <a href="#experiencia">Work</a>
+          <a href="#skills">Tech</a>
           <a href="#contacto">Contact</a>
-          <a class="nav-cta" href="assets/cv.pdf" download>Download CV</a>
         </nav>
       </div>
       <button type="button" class="nav-toggle" aria-label="Open menu">
@@ -49,94 +55,147 @@
     </header>
 
     <main>
+      <p class="eyebrow">Senior Backend Developer</p>
       <section class="hero" id="inicio">
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Senior Backend Developer</p>
             <h1>
-              <span class="name-line">Dario</span>
-              <span class="name-line accent">Cammarano</span>
+              <span>Dario</span>
+              <span class="accent">Cammarano</span>
             </h1>
             <p class="hero-lead">
               I design and build scalable backends with <strong>Java</strong> &
               <strong>Spring Boot</strong>, <strong>microservices</strong>, and
               <strong>cloud architectures</strong>. Focused on clean code, software quality, and
               collaboration in agile teams. 
-              <br /> Currently at <strong>Inditex</strong> as a Senior Backend Developer 
-              consultant.
             </p>
-            <p class="hero-meta">
-              Madrid, Spain <br /> 
-              <b>REST APIs · Distributed systems · Event-driven</b>
-              
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#experiencia">View experience</a>
-              <a class="btn btn-ghost" href="assets/cv.pdf" download>Download CV</a>
-            </div>
+            <div class="current-snapshot" aria-label="Current status">
+              <div class="snapshot-item">
+                <span>Currently</span>
+                <strong>Working at Inditex as a Senior Backend Developer consultant.</strong>
+              </div>
+              <div class="snapshot-item">
+                <span>Main Stack</span>
+                <strong>Java + Spring + Microservices</strong>
+              </div>
+              <div class="snapshot-item">
+                <span>Location</span>
+                <strong>Madrid, Spain</strong>
+              </div>
+              <div class="snapshot-item">
             <p class="hero-contact-inline">
               <a
+                class="link-with-icon"
                 href="https://www.linkedin.com/in/dario-cammarano"
                 target="_blank"
                 rel="noopener noreferrer"
+                ><span class="contact-icon" aria-hidden="true"
+                  ><i class="fa-brands fa-linkedin contact-logo"></i></span
                 >LinkedIn</a
               >
-              · <a href="mailto:cammarano.dario@gmail.com">cammarano.dario@gmail.com</a>
+              ·
+              <a class="link-with-icon" href="mailto:cammarano.dario@gmail.com"
+                ><span class="contact-icon" aria-hidden="true"
+                  ><i class="fa-solid fa-envelope contact-logo"></i></span
+                >cammarano.dario@gmail.com</a
+              >
+              ·
+              <a
+                class="link-with-icon"
+                href="assets/cv.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="contact-icon" aria-hidden="true"
+                  ><i class="fa-solid fa-file contact-logo"></i></span
+                >Resume</a
+              >
             </p>
+              </div>
+            </div>
           </div>
 
-          <aside class="terminal" aria-label="Backend architecture snapshot">
-            <div class="terminal-bar">
-              <span class="dot red"></span>
-              <span class="dot yellow"></span>
-              <span class="dot green"></span>
-              <span class="terminal-title">architecture-snapshot</span>
-            </div>
-            <div class="terminal-body architecture-card">
-              <p class="architecture-title">Production flow</p>
-              <ul class="architecture-flow">
-                <li>Client Apps</li>
-                <li>Domain Services</li>
-                <li>Spring Boot Services</li>
-                <li>Microservices &amp; Rest APIs</li>
-                <li>Events &amp; Integrations</li>
-              </ul>
-              <p class="architecture-note">
-                Clean architecture, reliability, and end-to-end ownership from analysis to deployment.
-              </p>
-              <ul class="architecture-tags">
-                <li>Java 17/21</li>
-                <li>Microservices</li>
-                <li>Clean Code</li>
-                <li>Integration</li>
-              </ul>
-            </div>
-          </aside>
         </div>
 
       </section>
-      <section class="section section-alt" id="stats" style="background-color: #000000;">
-        <div>
-        <ul class="stats">
-          <li>
-            <strong>15+</strong><span>years in tech</span>
+      <section class="section section-alt" id="stats">
+        <div class="value-grid">
+          <article class="value-card">
+            <h3>Backend Craft</h3>
+            <p>15+ years in tech, 8+ years focused on Java and backend systems.</p>
+          </article>
+          <article class="value-card">
+            <h3>Delivery Ownership</h3>
+            <p>Analysis, estimation, implementation, deployment, and production follow-up.</p>
+          </article>
+          <article class="value-card">
+            <h3>Engineering Standards</h3>
+            <p>Clean code, testing discipline, CI/CD, and observability as default practices.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt main-stack" id="stack" aria-labelledby="stack-title">
+        <ul class="main-stack-grid" role="list">
+          <li class="main-stack-item">
+            <span class="main-stack-icon" aria-hidden="true"><i class="fa-brands fa-java"></i></span>
+            <span class="main-stack-name">Java</span>
           </li>
-          <li>
-            <strong>8+</strong><span>years Java / backend</span>
+          <li class="main-stack-item">
+            <span class="main-stack-icon" aria-hidden="true"><i class="fa-solid fa-leaf"></i></span>
+            <span class="main-stack-name">Spring Boot</span>
           </li>
-          <li>
-            <strong>End-to-End Delivery</strong><span>analysis, estimation, development, deployment</span>
+          <li class="main-stack-item">
+            <span class="main-stack-icon" aria-hidden="true">
+              <svg class="main-stack-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" focusable="false" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M917.7 148.8l-42.4-42.4c-1.6-1.6-3.6-2.3-5.7-2.3s-4.1.8-5.7 2.3l-76.1 76.1a199.27 199.27 0 0 0-112.1-34.3c-51.2 0-102.4 19.5-141.5 58.6L432.3 308.7a8.03 8.03 0 0 0 0 11.3L704 591.7c1.6 1.6 3.6 2.3 5.7 2.3 2 0 4.1-.8 5.7-2.3l101.9-101.9c68.9-69 77-175.7 24.3-253.5l76.1-76.1c3.1-3.2 3.1-8.3 0-11.4zM769.1 441.7l-59.4 59.4-186.8-186.8 59.4-59.4c24.9-24.9 58.1-38.7 93.4-38.7 35.3 0 68.4 13.7 93.4 38.7 24.9 24.9 38.7 58.1 38.7 93.4 0 35.3-13.8 68.4-38.7 93.4zm-190.2 105a8.03 8.03 0 0 0-11.3 0L501 613.3 410.7 523l66.7-66.7c3.1-3.1 3.1-8.2 0-11.3L441 408.6a8.03 8.03 0 0 0-11.3 0L363 475.3l-43-43a7.85 7.85 0 0 0-5.7-2.3c-2 0-4.1.8-5.7 2.3L206.8 534.2c-68.9 69-77 175.7-24.3 253.5l-76.1 76.1a8.03 8.03 0 0 0 0 11.3l42.4 42.4c1.6 1.6 3.6 2.3 5.7 2.3s4.1-.8 5.7-2.3l76.1-76.1c33.7 22.9 72.9 34.3 112.1 34.3 51.2 0 102.4-19.5 141.5-58.6l101.9-101.9c3.1-3.1 3.1-8.2 0-11.3l-43-43 66.7-66.7c3.1-3.1 3.1-8.2 0-11.3l-36.6-36.2zM441.7 769.1a131.32 131.32 0 0 1-93.4 38.7c-35.3 0-68.4-13.7-93.4-38.7a131.32 131.32 0 0 1-38.7-93.4c0-35.3 13.7-68.4 38.7-93.4l59.4-59.4 186.8 186.8-59.4 59.4z"
+                />
+              </svg>
+            </span>
+            <span class="main-stack-name">REST API</span>
           </li>
-          <li>
-            <strong>Quality-Driven Engineering</strong><span>clean code, testing, CI/CD, observability</span>
+          <li class="main-stack-item">
+            <span class="main-stack-icon" aria-hidden="true"><i class="fa-brands fa-docker"></i></span>
+            <span class="main-stack-name">Docker</span>
+          </li>
+          <li class="main-stack-item">
+            <span class="main-stack-icon" aria-hidden="true">
+              <svg class="main-stack-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M10.204 14.35l.007.01-.999 2.413a5.171 5.171 0 0 1-2.075-2.597l2.578-.437.004.005a.44.44 0 0 1 .484.606zm-.833-2.129a.44.44 0 0 0 .173-.756l.002-.011L7.585 9.7a5.143 5.143 0 0 0-.73 3.255l2.514-.725.002-.009zm1.145-1.98a.44.44 0 0 0 .699-.337l.01-.005.15-2.62a5.144 5.144 0 0 0-3.01 1.442l2.147 1.523.004-.002zm.76 2.75l.723.349.722-.347.18-.78-.5-.623h-.804l-.5.623.179.779zm1.5-3.095a.44.44 0 0 0 .7.336l.008.003 2.134-1.513a5.188 5.188 0 0 0-2.992-1.442l.148 2.615.002.001zm10.876 5.97l-5.773 7.181a1.6 1.6 0 0 1-1.248.594l-9.261.003a1.6 1.6 0 0 1-1.247-.596l-5.776-7.18a1.583 1.583 0 0 1-.307-1.34L2.1 5.573c.108-.47.425-.864.863-1.073L11.305.513a1.606 1.606 0 0 1 1.385 0l8.345 3.985c.438.209.755.604.863 1.073l2.062 8.955c.108.47-.005.963-.308 1.34zm-3.289-2.057c-.042-.01-.103-.026-.145-.034-.174-.033-.315-.025-.479-.038-.35-.037-.638-.067-.895-.148-.105-.04-.18-.165-.216-.216l-.201-.059a6.45 6.45 0 0 0-.105-2.332 6.465 6.465 0 0 0-.936-2.163c.052-.047.15-.133.177-.159.008-.09.001-.183.094-.282.197-.185.444-.338.743-.522.142-.084.273-.137.415-.242.032-.024.076-.062.11-.089.24-.191.295-.52.123-.736-.172-.216-.506-.236-.745-.045-.034.027-.08.062-.111.088-.134.116-.217.23-.33.35-.246.25-.45.458-.673.609-.097.056-.239.037-.303.033l-.19.135a6.545 6.545 0 0 0-4.146-2.003l-.012-.223c-.065-.062-.143-.115-.163-.25-.022-.268.015-.557.057-.905.023-.163.061-.298.068-.475.001-.04-.001-.099-.001-.142 0-.306-.224-.555-.5-.555-.275 0-.499.249-.499.555l.001.014c0 .041-.002.092 0 .128.006.177.044.312.067.475.042.348.078.637.056.906a.545.545 0 0 1-.162.258l-.012.211a6.424 6.424 0 0 0-4.166 2.003 8.373 8.373 0 0 1-.18-.128c-.09.012-.18.04-.297-.029-.223-.15-.427-.358-.673-.608-.113-.12-.195-.234-.329-.349-.03-.026-.077-.062-.111-.088a.594.594 0 0 0-.348-.132.481.481 0 0 0-.398.176c-.172.216-.117.546.123.737l.007.005.104.083c.142.105.272.159.414.242.299.185.546.338.743.522.076.082.09.226.1.288l.16.143a6.462 6.462 0 0 0-1.02 4.506l-.208.06c-.055.072-.133.184-.215.217-.257.081-.546.11-.895.147-.164.014-.305.006-.48.039-.037.007-.09.02-.133.03l-.004.002-.007.002c-.295.071-.484.342-.423.608.061.267.349.429.645.365l.007-.001.01-.003.129-.029c.17-.046.294-.113.448-.172.33-.118.604-.217.87-.256.112-.009.23.069.288.101l.217-.037a6.5 6.5 0 0 0 2.88 3.596l-.09.218c.033.084.069.199.044.282-.097.252-.263.517-.452.813-.091.136-.185.242-.268.399-.02.037-.045.095-.064.134-.128.275-.034.591.213.71.248.12.556-.007.69-.282v-.002c.02-.039.046-.09.062-.127.07-.162.094-.301.144-.458.132-.332.205-.68.387-.897.05-.06.13-.082.215-.105l.113-.205a6.453 6.453 0 0 0 4.609.012l.106.192c.086.028.18.042.256.155.136.232.229.507.342.84.05.156.074.295.145.457.016.037.043.09.062.129.133.276.442.402.69.282.247-.118.341-.435.213-.71-.02-.039-.045-.096-.065-.134-.083-.156-.177-.261-.268-.398-.19-.296-.346-.541-.443-.793-.04-.13.007-.21.038-.294-.018-.022-.059-.144-.083-.202a6.499 6.499 0 0 0 2.88-3.622c.064.01.176.03.213.038.075-.05.144-.114.28-.104.266.039.54.138.87.256.154.06.277.128.448.173.036.01.088.019.13.028l.009.003.007.001c.297.064.584-.098.645-.365.06-.266-.128-.537-.423-.608zM16.4 9.701l-1.95 1.746v.005a.44.44 0 0 0 .173.757l.003.01 2.526.728a5.199 5.199 0 0 0-.108-1.674A5.208 5.208 0 0 0 16.4 9.7zm-4.013 5.325a.437.437 0 0 0-.404-.232.44.44 0 0 0-.372.233h-.002l-1.268 2.292a5.164 5.164 0 0 0 3.326.003l-1.27-2.296h-.01zm1.888-1.293a.44.44 0 0 0-.27.036.44.44 0 0 0-.214.572l-.003.004 1.01 2.438a5.15 5.15 0 0 0 2.081-2.615l-2.6-.44-.004.005z"
+                />
+              </svg>
+            </span>
+            <span class="main-stack-name">Kubernetes</span>
+          </li>
+          <li class="main-stack-item">
+            <span class="main-stack-icon" aria-hidden="true">
+              <svg class="main-stack-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M10.5 2.661l.54.997-1.797.644 2.409.218.748 1.246.467-1.121 2.077-.208-1.61-.613.426-1.017-1.578.519zm6.905 2.077L13.76 6.182l3.292 1.298.353-.146 3.293-1.298zm-10.51.312a2.97 1.153 0 0 0-2.97 1.152 2.97 1.153 0 0 0 2.97 1.153 2.97 1.153 0 0 0 2.97-1.153 2.97 1.153 0 0 0-2.97-1.152zM24 6.805s-8.983 4.278-10.395 4.953c-1.226.561-1.901.561-3.261.094C8.318 11.022 0 7.241 0 7.241v1.038c0 .24.332.499.966.8 1.277.613 8.34 3.677 9.45 4.206 1.112.53 1.9.54 3.313-.197 1.412-.738 8.049-3.905 9.326-4.57.654-.342.945-.602.945-.84zm-10.042.602L8.39 8.26l3.884 1.61zM24 10.637s-8.983 4.279-10.395 4.954c-1.226.56-1.901.56-3.261.093C8.318 14.854 0 11.074 0 11.074v1.038c0 .238.332.498.966.8 1.277.612 8.34 3.676 9.45 4.205 1.112.53 1.9.54 3.313-.197 1.412-.737 8.049-3.905 9.326-4.57.654-.332.945-.602.945-.84zm0 3.842l-10.395 4.954c-1.226.56-1.901.56-3.261.094C8.318 18.696 0 14.916 0 14.916v1.038c0 .239.332.499.966.8 1.277.613 8.34 3.676 9.45 4.206 1.112.53 1.9.54 3.313-.198 1.412-.737 8.049-3.904 9.326-4.569.654-.343.945-.613.945-.841z"
+                />
+              </svg>
+            </span>
+            <span class="main-stack-name">Redis</span>
+          </li>
+          <li class="main-stack-item">
+            <span class="main-stack-icon" aria-hidden="true"><i class="fa-solid fa-database"></i></span>
+            <span class="main-stack-name">MongoDB</span>
+          </li>
+          <li class="main-stack-item">
+            <span class="main-stack-icon" aria-hidden="true"><i class="fa-brands fa-aws"></i></span>
+            <span class="main-stack-name">AWS</span>
           </li>
         </ul>
-        </div>
       </section>
 
       <section class="section" id="experiencia">
-        <p class="section-label">Career</p>
-        <h2 class="section-title">Work experience</h2>
+        <p class="section-label">Work</p>
+        <h2 class="section-title">Experience</h2>
 
         <div class="timeline">
           <article class="job">
@@ -162,9 +221,9 @@
               code and delivery quality.
             </p>
             <ul class="tags">
-              <li>Java 17/21</li>
+              <li>Java 17 - 21</li>
               <li>Spring Boot</li>
-              <li>Kubernetes</li>
+              <li>Microservices</li>
               <li>Redis</li>
               <li>MongoDB</li>
               <li>API-First</li>
@@ -224,6 +283,9 @@
               <strong>Bugsnag</strong>.
             </p>
             <ul class="tags">
+              <li>Java 11 - 14</li>
+              <li>Spring Boot</li>
+              <li>Microservices</li>
               <li>Spring Data JPA</li>
               <li>AWS</li>
               <li>PostgreSQL</li>
@@ -291,6 +353,9 @@
               collaboration visible across the team.
             </p>
             <ul class="tags">
+              <li>Java 8 - 11</li>
+              <li>Spring Boot</li>
+              <li>Microservices</li>
               <li>RabbitMQ</li>
               <li>MongoDB</li>
               <li>Angular</li>
@@ -353,7 +418,10 @@
               and versioning.
             </p>
             <ul class="tags">
-              <li>Logistics</li>
+              <li>Java 8</li>
+              <li>Spring Boot</li>
+              <li>JSF</li>
+              <li>MySQL</li>
               <li>Integrations</li>
               <li>Spring Boot</li>
             </ul>
@@ -516,11 +584,190 @@
           </article>
         </div>
       </section>
+      
+      <section class="section section-alt" id="now">
+        <p class="section-label">Current focus</p>
+        <h2 class="section-title">What I am focused on now</h2>
+        <div class="now-grid">
+          <article class="now-card">
+            <h3>Current priorities</h3>
+            <ul class="now-list">
+              <li>Building reliable backend services for retail operations at scale.</li>
+              <li>Improving service boundaries, integration contracts, and delivery flow.</li>
+              <li>Keeping product teams moving with pragmatic technical decisions.</li>
+            </ul>
+          </article>
+          <article class="now-card">
+            <h3>How I usually contribute</h3>
+            <ul class="now-list">
+              <li>Translate domain requirements into clean and maintainable APIs.</li>
+              <li>Align development, QA, and operations around predictable releases.</li>
+              <li>Raise engineering standards through code review and documentation.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      
+
+      <section class="section section-skills" id="skills">
+        <p class="section-label">Expertise</p>
+        <h2 class="section-title">Skills &amp; stack</h2>
+        <p class="skills-lede">
+          Day-to-day toolkit for designing APIs, running services in the cloud, and keeping
+          production systems observable and maintainable.
+        </p>
+        <div class="skills-layout">
+          <article class="skill-panel skill-panel-featured">
+            <header class="skill-panel-head">
+              <span class="skill-panel-eyebrow">Core</span>
+              <div class="skill-panel-titles">
+                <h3 id="skill-cat-backend">Backend &amp; Java</h3>
+                <p class="skill-panel-sub">APIs, domain services, Spring ecosystem</p>
+              </div>
+            </header>
+            <ul class="skill-chips" aria-labelledby="skill-cat-backend">
+              <li>Java 8 → 21</li>
+              <li>Spring Boot</li>
+              <li>Spring Security</li>
+              <li>Spring Data JPA</li>
+              <li>Hibernate</li>
+              <li>Microservices</li>
+              <li>REST APIs</li>
+              <li>Maven</li>
+              <li>Node.js · Express</li>
+            </ul>
+          </article>
+          <article class="skill-panel">
+            <header class="skill-panel-head">
+              <span class="skill-panel-eyebrow">Infra</span>
+              <div class="skill-panel-titles">
+                <h3 id="skill-cat-cloud">Cloud &amp; DevOps</h3>
+                <p class="skill-panel-sub">Ship, deploy, observe</p>
+              </div>
+            </header>
+            <ul class="skill-chips" aria-labelledby="skill-cat-cloud">
+              <li>AWS · SQS · SNS</li>
+              <li>ECS · EC2</li>
+              <li>Docker</li>
+              <li>Kubernetes</li>
+              <li>Jenkins</li>
+              <li>GitHub Actions</li>
+              <li>CloudWatch</li>
+            </ul>
+          </article>
+          <article class="skill-panel">
+            <header class="skill-panel-head">
+              <span class="skill-panel-eyebrow">Data</span>
+              <div class="skill-panel-titles">
+                <h3 id="skill-cat-data">Data &amp; messaging</h3>
+                <p class="skill-panel-sub">Persistence &amp; async</p>
+              </div>
+            </header>
+            <ul class="skill-chips" aria-labelledby="skill-cat-data">
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>Redis</li>
+              <li>RabbitMQ</li>
+            </ul>
+          </article>
+          <article class="skill-panel">
+            <header class="skill-panel-head">
+              <span class="skill-panel-eyebrow">Edge</span>
+              <div class="skill-panel-titles">
+                <h3 id="skill-cat-fe">Frontend &amp; tools</h3>
+                <p class="skill-panel-sub">When the UI needs a hand</p>
+              </div>
+            </header>
+            <ul class="skill-chips" aria-labelledby="skill-cat-fe">
+              <li>Angular</li>
+              <li>React</li>
+              <li>HTML5 · CSS3</li>
+              <li>Bootstrap</li>
+              <li>Git · GitHub · Bitbucket</li>
+              <li>Jira · Confluence</li>
+              <li>Postman</li>
+              <li>Datadog</li>
+            </ul>
+          </article>
+          <article class="skill-panel skill-panel-compact">
+            <header class="skill-panel-head">
+              <span class="skill-panel-eyebrow">Practice</span>
+              <div class="skill-panel-titles">
+                <h3 id="skill-cat-method">Methodologies</h3>
+                <p class="skill-panel-sub">How teams ship</p>
+              </div>
+            </header>
+            <ul class="skill-chips" aria-labelledby="skill-cat-method">
+              <li>Agile</li>
+              <li>Scrum</li>
+              <li>Kanban</li>
+              <li>Clean code</li>
+              <li>Code review</li>
+            </ul>
+          </article>
+          <article class="skill-panel skill-panel-langs">
+            <header class="skill-panel-head">
+              <span class="skill-panel-eyebrow">Human</span>
+              <div class="skill-panel-titles">
+                <h3 id="skill-cat-langs">Languages</h3>
+                <p class="skill-panel-sub">Communication</p>
+              </div>
+            </header>
+            <ul class="skill-lang-rows" aria-labelledby="skill-cat-langs">
+              <li class="skill-lang-row">
+                <span class="skill-lang-name">
+                  <img class="lang-flag" src="assets/flags/es.svg" alt="" width="14" height="8" decoding="async" />
+                  Spanish
+                </span>
+                <span class="skill-lang-badge">Native</span>
+              </li>
+              <li class="skill-lang-row">
+                <span class="skill-lang-name">
+                  <img class="lang-flag" src="assets/flags/us.svg" alt="" width="14" height="8" decoding="async" />
+                  English
+                </span>
+                <span class="skill-lang-badge">Fluent</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
       <section class="section section-alt" id="destacados">
         <p class="section-label">What I do</p>
         <h2 class="section-title">Highlighted work</h2>
-        <div class="cards">
+        <p class="highlight-subtitle">
+          A selection of backend work snapshots focused on architecture, integration, and
+          production reliability.
+        </p>
+        <div class="highlight-layout">
+          <div class="highlight-intro">
+            <aside class="profile-panel" aria-label="Professional focus">
+              <p class="profile-panel-kicker">How I work</p>
+              <h3>Backend decisions with product context</h3>
+              <p class="profile-panel-lead">
+                I prioritize delivery rhythm, clear contracts between services, and production
+                reliability over complexity for its own sake.
+              </p>
+              <ul class="profile-pillars">
+                <li>
+                  <strong>Architecture</strong>
+                  <span>Pragmatic service boundaries and maintainable domain design.</span>
+                </li>
+                <li>
+                  <strong>Execution</strong>
+                  <span>From estimation to deployment, with clean handoff across teams.</span>
+                </li>
+                <li>
+                  <strong>Quality</strong>
+                  <span>Testing, observability, and resilient behavior in production.</span>
+                </li>
+              </ul>
+            </aside>
+          </div>
+          <div class="cards">
           <article class="card">
             <span class="card-kicker">Retail tech</span>
             <h3>Microservices &amp; Inditex</h3>
@@ -559,88 +806,13 @@
               <li>MongoDB</li>
             </ul>
           </article>
-        </div>
-      </section>
-
-      <section class="section" id="skills">
-        <p class="section-label">Expertise</p>
-        <h2 class="section-title">Skills &amp; stack</h2>
-        <div class="skill-grid">
-          <div class="skill-block">
-            <h3>Backend &amp; Java</h3>
-            <ul class="skill-list">
-              <li>Java 8 —> 21</li>
-              <li>Spring Boot</li>
-              <li>Spring Security</li>
-              <li>Spring Data JPA / Hibernate</li>
-              <li>Microservices</li>
-              <li>REST APIs</li>
-              <li>Maven</li>
-              <li>Node.js (Express)</li>
-            </ul>
-          </div>
-          <div class="skill-block">
-            <h3>Cloud &amp; DevOps</h3>
-            <ul class="skill-list">
-              <li>AWS (SQS, SNS, ECS, EC2)</li>
-              <li>Docker</li>
-              <li>Kubernetes</li>
-              <li>Jenkins</li>
-              <li>GitHub Actions</li>
-              <li>CloudWatch</li>
-            </ul>
-          </div>
-          <div class="skill-block">
-            <h3>Data &amp; messaging</h3>
-            <ul class="skill-list">
-              <li>PostgreSQL</li>
-              <li>MySQL</li>
-              <li>MongoDB</li>
-              <li>Redis</li>
-              <li>RabbitMQ</li>
-            </ul>
-          </div>
-          <div class="skill-block">
-            <h3>Frontend &amp; tools</h3>
-            <ul class="skill-list">
-              <li>Angular · React</li>
-              <li>HTML5, CSS3, Bootstrap</li>
-              <li>Git · GitHub · Bitbucket</li>
-              <li>Jira · Confluence</li>
-              <li>Postman</li>
-              <li>Datadog</li>
-            </ul>
-          </div>
-          <div class="skill-block">
-            <h3>Methodologies &amp; languages</h3>
-            <ul class="skill-list">
-              <li>Agile · Scrum · Kanban</li>
-              <li>Clean code · code review</li>
-            </ul>
-          </div>
-          <div class="skill-block">
-            <h3>Languages</h3>
-            <ul class="skill-list">
-              <li class="language-item">
-                <span class="language-level">
-                  <img class="lang-flag" src="assets/flags/es.svg" alt="" width="14" height="8" decoding="async" />
-                  &nbsp;
-                  <strong>Spanish  -&nbsp;</strong>Native</span>
-              </li>
-              <li class="language-item">
-                <span class="language-level">
-                  <img class="lang-flag" src="assets/flags/us.svg" alt="" width="14" height="8" decoding="async" />
-                  &nbsp;
-                  <strong>English  -&nbsp;</strong>Fluent</span>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
 
-      <section class="section section-alt" id="educacion">
+      <section class="section" id="educacion">
         <p class="section-label">Education</p>
-        <h2 class="section-title">Education</h2>
+        <h2 class="section-title">Studies</h2>
         <ul class="edu-list">
           <li>
             <strong>Advanced Web Programmer — Full Stack — Course</strong>
@@ -660,7 +832,7 @@
         </ul>
       </section>
 
-      <section class="section contact" id="contacto">
+      <section class="section contact section-alt" id="contacto">
         <p class="section-label">Contact</p>
         <h2 class="section-title">Let’s talk</h2>
         <p class="contact-lead">
@@ -669,15 +841,34 @@
         </p>
         <ul class="contact-links">
           <li>
-            <a href="mailto:cammarano.dario@gmail.com">cammarano.dario@gmail.com</a>
-          </li>
-          <li>
             <a
+              class="link-with-icon"
               href="https://www.linkedin.com/in/dario-cammarano"
               target="_blank"
               rel="noopener noreferrer"
+              ><span class="contact-icon" aria-hidden="true"
+                ><i class="fa-brands fa-linkedin contact-logo"></i></span
               >LinkedIn</a
             >
+          </li>
+          <li>
+            <a class="link-with-icon" href="mailto:cammarano.dario@gmail.com"
+              ><span class="contact-icon" aria-hidden="true"
+                ><i class="fa-solid fa-envelope contact-logo"></i></span
+              >cammarano.dario@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-with-icon"
+              href="assets/cv.pdf" download
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="contact-icon" aria-hidden="true"
+                ><i class="fa-solid fa-file contact-logo"></i></span
+              >Resume</a
+            >
+
           </li>
         </ul>
       </section>
